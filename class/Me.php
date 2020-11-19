@@ -1,5 +1,5 @@
 <?php
 
 class Me{
-    public $intro = "My calculation is: ";
+    public $intro = "<b>All Calculations</b>";
 }

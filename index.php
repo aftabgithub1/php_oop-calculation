@@ -20,9 +20,13 @@ if(isset($_POST['calculation'])){
     $num2 = $_POST['num2'];
 
     if(empty($num1) || empty($num2)){
-        echo "The fild must be empty!";
+        echo "The feild(s) must be empty!";
     } else {
-        echo $me->intro.$calc->add($num1, $num2);
+        echo $me->intro."<br>";
+        echo "The Addition is: ".$calc->add($num1, $num2)."<br>";
+        echo "The Subtraction is: ".$calc->subtract($num1, $num2)."<br>";
+        echo "The Multiplication is: ".$calc->multiply($num1, $num2)."<br>";
+        echo "The Division is: ".$calc->divide($num1, $num2)."<br>";
     }
 }
     
